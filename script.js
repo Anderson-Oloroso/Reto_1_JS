@@ -1,4 +1,4 @@
-const usuarios ={
+const entradaUsuario = {
     nombre: "henrik",
     apellido: "garcia",
     email: "garcia123henrik@gmail.com",
@@ -8,6 +8,26 @@ const usuarios ={
     activo: true
 }
 
-console.log(usuarios);
+console.log(entradaUsuario);
 
-const {email: correo, telefono: contacto} = usuarios
+const {email: correo, telefono: contacto} = entradaUsuario
+const {nombre, apellido,activo} = entradaUsuario
+
+
+const usuarioFormateado = {
+    identidad:{
+        nombre,
+        apellido
+    },
+    contactoInfo:{
+        correo, 
+        contacto,
+        ubicacion:{
+            ciudad:"Ciudad de Guatemala",
+            pais:"Guatemala"
+        },
+        activo
+    }
+}
+
+console.log(usuarioFormateado)
